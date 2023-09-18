@@ -1,0 +1,167 @@
+body{
+	background-color: rgb(28, 28, 28);
+}
+
+.fwDivInLine{
+	width: 90vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 4vw;
+	display: inline-flex;
+	text-align: center;
+}
+
+.fwDivBlock{
+	width: 90vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	display: block;
+}
+
+.hwDivInLine{
+	width: 45vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	display: inline-flex;
+}
+
+.hwDivBlock{
+	width: 45vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	display: block;
+}
+
+.logoBox{
+	background-image: url(E:/Web-development/likoygroup/media/1660827508_19-krasivosti-pro-p-koti-likoi-krasivo-foto-24.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 621px;
+	background-color: gray;
+	opacity: 1;
+	padding-top: 65%;
+	padding-bottom: 8%;
+}
+
+.logoName{
+	color: white;
+	font-family: 'Mooli', cursive;
+	font-weight: bold;
+	margin-left: 3vw;
+	font-size: 96px;
+	animation: leftLogoName 0.8s linear 0s alternate;
+}
+
+.logoSurname{
+	color: white;
+	font-family: 'Mooli', cursive;
+	font-weight: bold;
+	margin-left: 23vw;
+	font-size: 96px;
+	animation: rightLogoSurname 0.8s linear 0s alternate;
+}
+
+@keyframes leftLogoName{
+	0%{color: black; transform: translate(-400px, 0px);}
+	100%{color: white; transform: translate(0px, 0px);}
+}
+
+@keyframes rightLogoSurname{
+	0%{color: black; transform: translate(800px, 0px);}
+	100%{color: white; transform: translate(0px, 0px);}
+}
+
+.grid2rows{
+	width: 100%;
+	display: grid; 
+  	grid-template-columns: repeat(2, 1fr); 
+  	grid-template-rows: 1fr; 
+  	gap: 25px; 
+  	justify-items: center;
+  	grid-template-areas: 
+    ". .";
+}
+
+.gridA{
+	min-width: 100%;
+	min-height: 300px;
+	font-family: 'Mooli', cursive;
+	text-align: justify;
+	display: inline-flex;
+}
+
+.gridA h1{
+	size: 64px;
+	color: wheat;
+}
+
+.gridB{
+	background-image: url(E:/Web-development/likoygroup/media/scale_1200.jpg);	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: black;
+	min-width: 100%;
+	min-height: 500px;
+	border-radius: 100px;
+}
+
+@media(min-width: 740px){
+	.logoSurname{
+		margin-left: 15vw;
+	}
+}
+
+@media(max-width: 1000px){
+	.logoBox{
+		padding-top: 60%;
+	}
+}
+
+@media(max-width: 660px){
+	.logoBox{
+		padding-top: 70vh;
+	}
+	.logoName{
+		font-size: 64px;
+	}
+	.logoSurname{
+		font-size: 64px;
+	}
+}
+
+@media(min-width: 1000px){
+	.logoName{
+		font-size: 128px;
+		margin-left: 15vw;
+	}
+	.logoSurname{
+		font-size: 128px;
+		margin-left: 30vw;
+	}
+}
+
+@media (min-width: 760px) and (min-height: 940px){
+	.logoBox{
+		padding-top: 60vh;
+	}
+}
+
+@media (min-width: 1024px) and (min-height: 600px){
+	.logoBox{
+		padding-top: 30vh;
+	}
+}
+
+@media (max-width: 425px){
+	.grid2rows{
+	  	grid-template-columns: 1fr; 
+	  	grid-template-areas: 
+    	".";
+	}
+
+	.gridB{
+		display: none;
+	}
+}
