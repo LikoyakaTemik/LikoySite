@@ -33,7 +33,7 @@ body{
 }
 
 .logoBox{
-	background-image: url(E:/Web-development/likoygroup/media/1660827508_19-krasivosti-pro-p-koti-likoi-krasivo-foto-24.jpg);
+	background-image: url(media/1660827508_19-krasivosti-pro-p-koti-likoi-krasivo-foto-24.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -97,7 +97,7 @@ body{
 }
 
 .gridB{
-	background-image: url(E:/Web-development/likoygroup/media/scale_1200.jpg);	
+	background-image: url(media/scale_1200.jpg);	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
